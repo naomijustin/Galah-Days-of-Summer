@@ -13,7 +13,7 @@ body {
 }
 
 /* --- Galah --- */
-#bird-container {
+#bird-head-container {
     left: 0;
     right: 0;
     top: 0;
@@ -36,6 +36,21 @@ body {
     position: relative;
     border-radius: 50px;
     background: #2F2D42;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+    top: 130px;
+    left: 50px;
+    z-index: 2;
+    box-shadow:
+        0 0 0 9px #B59EB8,
+        0 0 0 11px #9c869f,
+        0 0 0 16px #B59EB8,
+        0 0 0 18px #9c869f;
+    margin: 0 auto;
+}
+#galah-pink-lower-head {
+    position: relative;
+    width: 348px;
+    height: 350px;
+    background: #FC91AD;
 }
