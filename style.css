@@ -1,5 +1,41 @@
-/* --- General --- */
+/* --- Built In --- */
 body {
     margin: 0;
     background: green;
+}
+
+/* --- Generic Classes --- */
+.position-absolute {
+    position: absolute;
+}
+.d-flex {
+    display: flex;
+}
+
+/* --- Galah --- */
+#bird-container {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: relative;
+    border: 2px solid red;
+    width: 400px;
+}
+#galah-white-head-with-eye {
+    position: relative;
+    border-radius: 62% 38% 22% 78% / 67% 83% 17% 33%;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, #F4F3FD 0%, #E5CCCD 100%);
+    width: 348px;
+    height: 150px;
+    margin: 0 auto;
+}
+#galah-eye {
+    position: relative;
+    border-radius: 50px;
+    background: #2F2D42;
+    width: 20px;
+    height: 20px;
 }
