@@ -27,10 +27,12 @@ body {
     position: relative;
     border-radius: 62% 38% 22% 78% / 67% 83% 17% 33%;
     background: rgb(2,0,36);
-    background: linear-gradient(180deg, #F4F3FD 0%, #E5CCCD 100%);
+    background: linear-gradient(180deg, #F4F3FD 0%, #dcb7b8 100%);
     width: 348px;
     height: 150px;
     margin: 0 auto;
+    rotate: 5deg;
+    z-index: 2
 }
 #galah-eye {
     position: relative;
@@ -40,7 +42,7 @@ body {
     height: 25px;
     top: 130px;
     left: 50px;
-    z-index: 2;
+    z-index: 3;
     box-shadow:
         0 0 0 9px #B59EB8,
         0 0 0 11px #9c869f,
@@ -48,9 +50,27 @@ body {
         0 0 0 18px #9c869f;
     margin: 0 auto;
 }
+#galah-eye-highlight {
+    position: relative;
+    border-radius: 50px;
+    width: 8px;
+    height: 8px;
+    top: 110px;
+    left: 44px;
+    z-index: 4;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
 #galah-pink-lower-head {
     position: relative;
     width: 348px;
-    height: 350px;
-    background: #FC91AD;
+    height: 250px;
+    top: -90px;
+    left: -20px;
+    background: radial-gradient(circle, #FC91AD 30%,  #c4496a 100%);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    margin: 0 auto;
+    z-index: 1;
+    rotate: 10deg;
+
 }
