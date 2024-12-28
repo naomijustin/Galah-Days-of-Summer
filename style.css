@@ -4,28 +4,19 @@ body {
     background: green;
 }
 
-/* --- Generic Classes --- */
-.position-absolute {
-    position: absolute;
-}
-.d-flex {
-    display: flex;
-}
-
 /* ====== Galah ====== */
 
 /* --- Gala Head --- */
 #bird-head-container {
+    position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    margin: auto;
-    /* padding-top: 50px; */
-    position: relative;
-    border: 2px solid red;
+    margin: 0 auto;
     width: 400px;
     z-index: 2;
+    animation: head-move 2s infinite;
 }
 #galah-white-head-with-eye {
     position: relative;
@@ -94,6 +85,7 @@ body {
     top: -280px;
     left: 160px;
     rotate: 30deg;
+    animation: chomp-top 2s infinite;
 }
 #galah-bottom-beak {
     position: relative;
@@ -108,20 +100,70 @@ body {
     left: 140px;
     z-index: 4;
     rotate: 10deg;
+    animation: chomp-bottom 2s infinite;
 }
 /* --- Galah Body --- */
+#bird-body-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    /* top: 40px; */
+    bottom: 0;
+    margin: 0 auto;
+    /* width: 400px; */
+    z-index: 1;
+}
 #galah-body {
     position: relative;
     border-radius: 32% 22% 35% 57% / 58% 53% 29% 27% ;
     width: 350px;
     height: 390px;
-    background: red;
     margin: 0 auto;
-    top: -360px;
-    right: 90px;
+    top: 290px;
+    right: 100px;
     z-index: 1;
     rotate: 10deg;
     background: 
     radial-gradient(ellipse 170px 60px at 190px 50px, #c4496a 30%,  #FC91AD10 100%),
     radial-gradient(circle, #FC91AD 30%,  #c4496a 100%);
+}
+#galah-wing {
+    position: relative;
+    border-radius: 60% 40% 91% 9% / 56% 8% 92% 44% ;
+    width: 250px;
+    height: 350px;
+    background: 
+    linear-gradient(#C5BEBD 0%, #6A6D72 100%);
+    margin: 0 auto;
+    top: -80px;
+    right: 180px;
+    z-index: 5;
+    rotate: 15deg;
+    animation: wing-rotate 4s infinite;
+}
+
+/* --- Animations --- */
+@keyframes chomp-top {
+    0% {rotate: 30deg;}
+    50% {rotate: 10deg;}
+    100% {rotate: 30deg;}
+} 
+@keyframes chomp-bottom {
+    0% {rotate: 30deg;}
+    50% {rotate: 50deg;}
+    100% {rotate: 30deg;}
+} 
+@keyframes head-move {
+    0% {top: 0px; right: 0px;}
+    50% {top: 40px; right: -40px;}
+    100% {top: 0px; right: 0px;}
+}
+@keyframes wing-rotate {
+    0% {rotate: 15deg; right: 180px;}
+    25% {rotate: 0deg; right: 220px;}
+    50% {rotate: 30deg; right: 180px;}
+    75% {rotate: 0deg; right: 220px;}
+    100% {rotate: 15deg; right: 180px;}
+    
 }
