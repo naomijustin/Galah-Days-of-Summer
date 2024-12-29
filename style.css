@@ -14,7 +14,15 @@ body {
     padding: 0;
     background: #4C703D; /* browsers that don't support gradients */ 
     background: 
-    repeating-conic-gradient(from 90deg at 0% 0%, #4C703D 0deg 10deg, #99C003 20deg 30deg, #4C703D 40deg 45deg,  #99C003 70deg 71deg, #4C703D 75deg 80deg, #99C003 90deg 120deg);
+    radial-gradient(ellipse 200px 90px at 300px 200px, #bae21870 20%, #FFFFFF00 50%),
+    radial-gradient(ellipse 200px 120px at 800px 500px, #bae21870 20%, #FFFFFF00 50%),
+    radial-gradient(ellipse 300px 190px at 500px 400px, #bae21870 20%, #FFFFFF00 50%),
+    radial-gradient(ellipse 300px 190px at 150px 100px, #bae21870 20%, #FFFFFF00 50%),
+    radial-gradient(ellipse 400px 200px at 900px 0px, #bae21870 20%, #FFFFFF00 50%),
+    radial-gradient(ellipse 400px 200px at 800px 300px, #4C703D90 20%, #FFFFFF00 50%),
+    radial-gradient(ellipse 500px 150px at 200px 500px, #4C703D95 20%, #FFFFFF00 50%),
+    repeating-conic-gradient(from 90deg at 0% 0%, #4C703D 0deg 10deg, #67a004 20deg 30deg, #4C703D 40deg 45deg,  #67a004 70deg 71deg, #4C703D 75deg 80deg, #67a004 90deg 120deg)
+    ;
 }
 
 /* ====== Galah ====== */
@@ -311,29 +319,3 @@ body {
     linear-gradient(190deg, #FFFFFF00 57%, #594c35 65%, #FFFFFF00 75%),
     linear-gradient(65deg, #594c35 32%, #AB9B7E 40%);
 }
-
-/* --- Media Queries --- */
-
-/* @media only screen and (min-width: 780px) {
-    #bird-container {
-        transform: scale(90%);
-    }
-}
-
-@media only screen and (max-width: 779px) {
-    #bird-container {
-        transform: scale(80%);
-    }
-}
-
-@media only screen and (max-width: 604px) {
-    #bird-container {
-        transform: scale(60%);
-    }
-}
-
-@media only screen and (max-width: 442px) {
-    #bird-container {
-        transform: scale(40%);
-    }
-} */
