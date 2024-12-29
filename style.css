@@ -190,8 +190,8 @@ body {
     100% {rotate: 15deg; right: 180px;}
 }
 
+/* --- Leaf in mouth --- */
 
-/* --- Background --- */
 #leaf-in-mouth {
     border-radius: 69% 31% 100% 0% / 100% 0% 100% 0% ;
     background: #2e4723; /* browsers that don't support gradients */ 
@@ -205,6 +205,9 @@ body {
     right: -50px;  
     z-index: 5;  
 }
+
+/* --- Background Leaves - Right Branch --- */
+
 .leaf-rotation {
     border-radius: 69% 31% 100% 0% / 100% 0% 100% 0% ;
     background: #2e4723; /* browsers that don't support gradients */ 
@@ -232,6 +235,52 @@ body {
     top: 400px;
     right: -160px;
 }
+#leaf-4 {
+    rotate: -70deg;
+    top: 500px;
+    right: -160px;
+}
+#leaf-5 {
+    rotate: -70deg;
+    top: 200px;
+    right: -60px;
+}
+#leaf-6 {
+    rotate: -70deg;
+    top: 120px;
+    right: 20px;
+}
+
+/* --- Background Leaves - Left Branch --- */
+
+#leaf-7 {
+    rotate: -70deg;
+    top: 120px;
+    right: 800px;
+}
+#leaf-8 {
+    rotate: -90deg;
+    top: 190px;
+    right: 830px;
+}
+#leaf-9 {
+    rotate: -50deg;
+    top: 350px;
+    right: 870px;
+}
+#leaf-10 {
+    rotate: -55deg;
+    top: 500px;
+    right: 840px;
+}
+#leaf-11 {
+    rotate: -70deg;
+    top: 800px;
+    right: 740px;
+}
+
+/* --- Branches --- */
+
 #branch {
     position: absolute;
     top: -200px;
