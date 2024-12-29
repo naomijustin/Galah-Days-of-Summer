@@ -1,4 +1,4 @@
-# Galah-Days-of-Summer
+# Galah Days of Summer
 A CSS animation of a galah in the summer months in Australia.
 
 _This is a submission for [Frontend Challenge - December Edition, CSS Art: December](https://dev.to/challenges/frontend-2024-12-04)._
